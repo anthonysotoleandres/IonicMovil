@@ -33,7 +33,7 @@ export class ClienteAddEditPage implements OnInit {
         Validators.maxLength(50),
 
       ])],
-      
+
       //PARA EMAIL
       email: ['',
       Validators.compose([
@@ -41,7 +41,18 @@ export class ClienteAddEditPage implements OnInit {
         Validators.email,
 
       ])
-    ]
+    ],
+    telefono: [
+      '', Validators.required],
+      ingreso: [
+      '0',
+      Validators.compose([
+      Validators.required,
+      Validators.min(0)
+      ])],
+      nacimiento: [
+      '',
+      Validators.required],
 
 
 
