@@ -7,7 +7,7 @@
 <ion-content padding>
   <ion-item>
     <ion-label position="stacked">Nombre</ion-label>
-    <ion-input type="text" placeholder="none"></ion-input>
+    <ion-input [(ngModel)]="nombre" type="text" placeholder="Nombre"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Email</ion-label>
@@ -29,5 +29,5 @@
 
 
 
-  <ion-button type="round" color="primary" expand="block" padding> Confirmar </ion-button>
+  <ion-button type="round" color="primary" expand="block" padding (click) = "submit()"> Confirmar </ion-button>
 </ion-content>

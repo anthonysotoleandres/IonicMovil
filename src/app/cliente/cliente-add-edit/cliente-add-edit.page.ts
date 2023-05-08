@@ -9,7 +9,13 @@ export class ClienteAddEditPage implements OnInit {
 
   constructor() { }
 
+  nombre: string = "Anthony";
   ngOnInit() {
   }
+
+  submit() {
+    console.log(this.nombre);
+    this.nombre = "Hermenegildo";
+    }
 
 }
