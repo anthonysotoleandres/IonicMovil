@@ -5,29 +5,34 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label position="stacked">Nombre</ion-label>
-    <ion-input [(ngModel)]="nombre" type="text" placeholder="Nombre"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="stacked">Email</ion-label>
-    <ion-input type="email" placeholder="Email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="stacked">Telefono</ion-label>
-    <ion-input type="number" placeholder="telefono"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="stacked">Sueldo</ion-label>
-    <ion-input type="numbre" placeholder="Sueldo"></ion-input>   
-  </ion-item>
-  <ion-item>
-    <ion-label position="stacked">Procedencia</ion-label>
-    <ion-input type="text" placeholder="Procedencia"></ion-input>  
-  </ion-item>
+  
+    
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input [(ngModel)]="nombre" type="text" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Telefono</ion-label>
+      <ion-input type="number" placeholder="telefono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Sueldo</ion-label>
+      <ion-input type="numbre" placeholder="Sueldo"></ion-input>   
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Procedencia</ion-label>
+      <ion-input type="text" placeholder="Procedencia"></ion-input>  
+    </ion-item>
+  
+  
+  
+  
+    <ion-button type="round" color="primary" expand="block" padding (click) = "submit()"> Confirmar </ion-button>
 
 
 
-
-  <ion-button type="round" color="primary" expand="block" padding (click) = "submit()"> Confirmar </ion-button>
 </ion-content>
